@@ -4,12 +4,17 @@ const Question = require("../models/Question");
 // Create new answer
 const createAnswer = async (req, res) => {
   try {
+    console.log("Create answer - params:", req.params);
+    console.log("Create answer - body:", req.body);
+    console.log("Create answer - user:", req.user ? req.user._id : "No user");
+
     const { questionId } = req.params;
     const { content } = req.body;
 
     // Check if question exists
     const question = await Question.findById(questionId);
     if (!question) {
+      console.log("Question not found:", questionId);
       return res.status(404).json({
         success: false,
         message: "Question not found",

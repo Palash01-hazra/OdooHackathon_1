@@ -11,11 +11,11 @@ const {
   acceptAnswer,
 } = require("../controllers/answerController");
 
-// @route   POST /api/questions/:questionId/answers
+// @route   POST /api/answers/:questionId
 // @desc    Create new answer for a question
 // @access  Private
 router.post(
-  "/:questionId/answers",
+  "/:questionId",
   auth,
   validateAnswer,
   handleValidationErrors,

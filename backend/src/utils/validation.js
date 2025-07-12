@@ -60,7 +60,7 @@ const validateQuestion = [
 // Validation rules for answers
 const validateAnswer = [
   body("content")
-    .isLength({ min: 10 })
+    .isLength({ min: 1 })
     .withMessage("Answer must be at least 10 characters long"),
 ];
 
