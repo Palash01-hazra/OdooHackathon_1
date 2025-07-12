@@ -4,6 +4,9 @@ This repo is for Odoo Hackathon project building
 ## Problem Statement:
 StackIt – A Minimal Q&A Forum Platform 
 
+### Drive Link of Video: 
+https://drive.google.com/file/d/1Lv2SvGJJRmpITW44eLGKbogPcE4dyff6/view?usp=sharing
+
 ## Team Members Name
 ### Name
 Palash Hazra
